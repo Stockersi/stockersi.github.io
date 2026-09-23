@@ -8,6 +8,12 @@ function App() {
   return (
     <div style={{ fontFamily: "system-ui", padding: "20px" }}>
       <h1>Hello, {name}!</h1>
+      // main.jsx or index.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
       <p>You just bent GitHub with .gitattributes.</p>
       <p>Current status: <strong>{vibes}</strong></p>
 
