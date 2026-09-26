@@ -78,5 +78,28 @@ ul.nav-links li {
         <li><a href="/upload.html">UPLOAD/Publish</a></li>
       </ul>
     </nav>
+
+    <div id="root"></div>
+
+      <!-- 1. Load React and ReactDOM from CDN -->
+  <script src="https://unpkg.com" crossorigin></script>
+  <script src="https://unpkg.com" crossorigin></script>
+  
+  <!-- 2. Load Babel standalone compiler -->
+  <script src="https://unpkg.com"></script>
+
+  <script type="text/babel">
+    function App() {
+      return (
+        <div style={{ textAlign: 'center', marginTop: '50px', fontFamily: 'sans-serif' }}>
+          <p>Stockersi is a mod of Scratch to add crazy new features</p>
+        </div>
+      );
+    }
+
+    // Render to the target container using React 18 syntax
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
   </body>
 </html>
